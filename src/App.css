@@ -11,7 +11,7 @@ body {
  .container {
    width: 100%;
    max-width: 800px;
-   background-color: #ffffff;
+   background-color: #000000;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
    padding: 20px;
    border-radius: 8px;
@@ -76,5 +76,21 @@ body {
  
  .result-grid div {
    padding: 8px;
+ }
+ 
+ .byline {
+   margin-top: 30px;
+   font-family: Arial, sans-serif;
+   font-size: 14px;
+   color: #666;
+ }
+ 
+ .byline a {
+   color: #007BFF;
+   text-decoration: none;
+ }
+ 
+ .byline a:hover {
+   text-decoration: underline;
  }
  
