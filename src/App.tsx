@@ -41,10 +41,8 @@ function App() {
 
   return (
     <>
-      <div className="app-bar">
-        <h1>Text<span>Tamer</span></h1>
-      </div>
       <div className="container">
+        <h1>Text<span className="tamer">Tamer</span></h1>
         <textarea
           id="textInput"
           value={text}
