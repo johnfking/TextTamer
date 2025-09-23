@@ -6,6 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
+  contents: write
   contents: read
   pages: write
   id-token: write
@@ -21,7 +22,9 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-
+        with:
+          fetch-depth: 0
+\
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
@@ -33,11 +36,6 @@ jobs:
 
       - name: Build project
         run: npm run build
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist
 
   deploy:
     needs: build
@@ -53,3 +51,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
