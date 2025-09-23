@@ -52,6 +52,7 @@ textarea {
   margin-bottom: 16px;
   background-color: #ffffff;
   color: #1d1d1f;
+  color-scheme: light;
 }
 
 textarea::placeholder {
