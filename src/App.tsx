@@ -41,7 +41,7 @@ function App() {
 
   return (
     <>
-      <div className="container">
+      <main className="container">
         <h1>Text<span className="tamer">Tamer</span></h1>
         <textarea
           id="textInput"
@@ -54,7 +54,7 @@ function App() {
         <br />
         <button onClick={calculateReadability}>Calculate Results</button>
         <div className="results">
-          <h3>Analysis</h3>
+          <h2>Analysis</h2>
           <div className="result-grid">
             <div>
               <strong>Text Standard:</strong> <br />
@@ -109,7 +109,7 @@ function App() {
             Check out the project on <a href="https://github.com/johnfking/texttamer" target="_blank" rel="noopener noreferrer">GitHub</a>.
           </p>
         </div>
-      </div>
+      </main>
     </>
   );
 }
