@@ -62,7 +62,7 @@ textarea::placeholder {
 button {
   padding: 12px 24px;
   font-size: 1rem;
-  background-color: #0071e3;
+  background-color: #0058c3;
   color: #ffffff;
   border: none;
   border-radius: 8px;
@@ -81,7 +81,7 @@ button:hover {
   font-size: 1.1rem;
 }
 
-.results h3 {
+.results h2 {
   margin-bottom: 12px;
   text-align: center;
   font-size: 1.5rem;
